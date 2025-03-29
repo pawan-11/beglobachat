@@ -1,6 +1,5 @@
 const express = require('express'); // Importing express
 const mongoose = require('mongoose');
-const functions = require('firebase-functions');
 const app = express(); // Creating an express app
 const bodyParser = require('body-parser');
 var cors = require('cors');
@@ -82,4 +81,3 @@ const port = 3001;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-exports.app = functions.https.onRequest(app);
